@@ -5,6 +5,18 @@ let sw = document.querySelector('.sw')
 let gd = document.querySelector('.gd')
 let pg = document.querySelector('.pg')
 
+let cart = []
+
+document.querySelectorAll('.tc').forEach(
+  item => item.addEventListener('click', function() {
+    cart.push(1)
+    console.log(cart)
+  })
+);
+
+
+
+
 sw.addEventListener('click', function() {
   swings.classList.remove('disable')
   garden.classList.add('disable')
@@ -31,4 +43,5 @@ pg.addEventListener('click', function() {
   gd.classList.remove('actived')
   sw.classList.remove('actived')
 })
+
 
