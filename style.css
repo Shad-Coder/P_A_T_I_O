@@ -12,6 +12,12 @@ p {
    font-weight: 600;
 
 }
+.cer {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+}
 h5 {
    font-weight: 700;
    text-transform: uppercase;
@@ -24,11 +30,13 @@ h1 {
    color: rgb(15, 55, 0);
 }
 .text-wrap {
-   height: 100%;
-   width: auto;
-   margin: 0 4vmin;
+   height: 22vmin;
+   width: 100%;
+   margin: 0 1.4vmin;
    font-weight: bold;
 text-align: start;
+overflow-y: auto;
+margin-top: 20vmin;
 }
 .text-wrap h6 {
    font-weight: 600;
@@ -86,8 +94,12 @@ border-right:none;
 .cart-body {
    width: auto;
    height: auto;
-   margin-top: 9vmin;
+   margin-top: 26vmin;
  
+}
+.cart-body .btn {
+   font-size: 2vmin;
+   border-radius: 1.5vmin;
 }
 /*.btn:after{
 	content:"";
@@ -122,6 +134,23 @@ border-right:none;
     background-color: black;
     border: 0px;
     transition: .3s ease;
+}
+.text-wrap div {
+   display: flex;
+   text-align: center;
+   font-size: 2.2vmin;
+   width: 100%;
+   height: auto;
+   margin: 2.5vmin 0;
+  
+   padding: 1vmin;
+}
+.text-wrap div img {
+   width: 20%;
+  height: 6.5vmin;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit:cover;
 }
 .navigate {
    width:57vw;
@@ -296,7 +325,7 @@ header img {
 }
 .cart-menu {
    width: 50vmin;
-   height: 70vmin;
+   height: auto;
    margin: auto;
    position: relative;
    background-color: #f8f8f8;
@@ -304,6 +333,7 @@ header img {
    margin: 10vmin auto;
    padding: 0 4vmin;
    border-radius: 2vmin;
+   padding-bottom: 2vmin;
 }
 .cart-in {
    display: flex;
@@ -312,7 +342,7 @@ header img {
    width: auto;
    height: 7vmin;
    margin: 2vmin 0vmin;
-   background-color: #f4f4f4;
+
    border-radius: 1vmin;
    
 }
@@ -327,6 +357,9 @@ header img {
    height: .1vmin;
    background-color: #747374;
    margin: 2vmin 0;
+}
+form a {
+   font-size: 3vmin;
 }
 .cart-head {
    
@@ -419,7 +452,11 @@ flex-direction: row;
 }
 .products-class {
    width: 33.3%;
+   height: auto;
    transition: .3s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .products-name .products-class:hover {
@@ -769,6 +806,11 @@ line-height: 2.2vmin;
    opacity: 0;
    transition: .3s ease;
 } */
+.text-wrap div h4 {
+   font-size: 2vmin;
+   margin: 0 1vmin;
+   color:#ff8a1d;
+}
 .card img {
    width: 100%;
   height: 42vmin;
@@ -789,6 +831,9 @@ a {
    font-size: 2.2vmin;
 }
 @media (max-width: 920px) {
+      .cart-menu {
+         width: 60vmin;
+      }
    .logo img {
       width: 12vmin;
       margin: auto;
@@ -799,6 +844,15 @@ a {
    .menu {
       display: block;
       margin-top: 2vmin;
+   }
+   .input-container label {
+      font-size: 2.67vmin;
+   }
+   .input-container input {
+      font-size: 2vmin;
+   }
+   .cart-body .btn {
+      font-size: 2.8vmin;
    }
    .locales {
       display: none;
@@ -830,6 +884,9 @@ a {
       font-size: 3.7vmin;
      
    }
+   .products-class {
+      height: 12vmin;
+   }
    .contacts span {
       font-size: 5vmin;
 
@@ -857,7 +914,11 @@ a {
       font-size: 4.4vmin;
       line-height: 5.5vmin;
    }
-
+   .text-wrap div h4 {
+      font-size: 3vmin;
+      margin: 0 1vmin;
+      color:#ff8a1d;
+   }
    .products-catalog {
       width: 80%;
    }
@@ -867,7 +928,7 @@ a {
    .products-name {
       width: 100%;
       align-items:unset;
-      margin: 0;
+      margin: 5vmin 0;
    }
    .products-name h3 {
       font-size: 3vmin;
@@ -891,19 +952,20 @@ a {
       font-weight: lighter;
    }
    .card img {
-      height: auto;
+    
    }
    .slider__bg img {
       height: unset;
    }
+
    .btn {
-      font-size: 3vmin;
+      font-size: 3.5vmin;
    }
    .price {
-      font-size: 2.8vmin;
+      font-size: 3.9vmin;
    }
    del {
-      font-size: 2.5vmin;
+      font-size: 3vmin;
    }
    .carousel-caption h5 {
       font-size: 3.4vmin;
@@ -932,7 +994,8 @@ a {
       font-size: 4.45vmin;
    }
    .products-header h3 {
-     font-size: 3.4vmin;
+     font-size: 3.7vmin;
+   
    }
    .cart-trigger {
       bottom: 3.4%;
@@ -940,8 +1003,11 @@ a {
       z-index: 19999999;
    }
    .lnr-cart {
-      font-size: 3vmax;
-     
+      font-size: 4.5vmax;
+     padding: 3vmin;
+   }
+   .mainer {
+      padding: 9vmin 1.8vmin;
    }
 }
 
